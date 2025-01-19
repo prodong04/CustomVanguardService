@@ -1,0 +1,6 @@
+openpyxl
+#difflib
+streamlit
+pandas
+numpy
+pyinstaller
