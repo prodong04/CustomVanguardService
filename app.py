@@ -4,7 +4,7 @@ from io import BytesIO
 from make import engine
 
 # 이미지 표시
-st.image("image.png", caption="와인 재고 관리 시스템", use_column_width=True)
+st.image("image.png", caption="와인 재고 관리 시스템", use_container_width=True)
 
 # 엑셀 파일 업로드
 st.write("OFF, ON, REMAIN 엑셀 파일을 업로드하세요.")
