@@ -83,6 +83,8 @@ def engine(df_off, df_on, df_remain):
         # 여기서는 "H=TRUNC((D+E)/12)" 의 로직을 그대로 파이썬에서 구현:
         d_val = ws[f'D{row}'].value or 0  # OFF 수량
         e_val = ws[f'E{row}'].value or 0  # ON 수량
+        d_val = float(d_val)
+        e_val = float(e_val)
         total_monthly_sales = int((d_val + e_val)/12)  # TRUNC() 와 동일
 
         if total_monthly_sales != 0:
